@@ -80,6 +80,7 @@ const User = sequelize.define('User', {
   role: {
     type: DataTypes.ENUM('Employee', 'Manager', 'Admin'),
     defaultValue: 'Employee',
+     allowNull: false
   },
   manager_id: {
     type: DataTypes.STRING(50),
